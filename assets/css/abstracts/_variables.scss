@@ -1,0 +1,52 @@
+// Typography
+$font-family-header: 'Ubuntu', sans-serif;
+$font-family-body: 'Roboto', sans-serif;
+
+// Spacing
+$spacing: (
+  "xxs": 2px,
+  "xs": 4px,
+  "s": 8px,
+  "m": 16px,
+  "l": 32px,
+  "xl": 64px,
+);
+
+$fontSizes: (
+  "xxs": 8px,
+  "xs": 10px,
+  "s": 12px,
+  "m": 14px,
+  "l": 18px,
+  "xl": 24px,
+);
+
+// Site Colours
+$light-background: #e7e8e9;
+$light-container: #f1f2f3;
+$light-font: #333;
+
+$dark-background: #454545;
+$dark-container: #333;
+$dark-font: #f1f2f3;
+
+// Theme Colours
+$light-primary: #011638;
+$light-secondary: #23CE6B;
+$light-highlight: #F81;
+
+$dark-primary: #011638;
+$dark-secondary: #23CE6B;
+$dark-highlight: #F81;
+
+// Status Colours
+$light-success: #4bb543;
+$light-warning: #ff6700;
+$light-danger: #8b0000;
+
+$dark-success: #4bb543;
+$dark-warning: #ff6700;
+$dark-danger: #8b0000;
+
+// Global sizes
+$nav-height: 50px;

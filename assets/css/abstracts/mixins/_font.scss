@@ -1,0 +1,32 @@
+@import 'tools';
+@import '../variables';
+
+@mixin font-size($size) {
+  @include rem(font-size, map-get($fontSizes, $size));
+}
+@mixin font-xxs() {
+  @include font-size('xxs');
+}
+@mixin font-xs() {
+  @include font-size('xs');
+}
+@mixin font-s() {
+  @include font-size('s');
+}
+@mixin font-m() {
+  @include font-size('m');
+}
+@mixin font-l() {
+  @include font-size('l');
+}
+@mixin font-xl() {
+  @include font-size('xl');
+}
+
+@mixin font-color() {
+  color: var(--font);
+}
+
+@mixin bold() {
+  font-weight: 700;
+}

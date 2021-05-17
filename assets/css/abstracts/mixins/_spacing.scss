@@ -1,0 +1,50 @@
+@import 'tools';
+@import '../variables';
+
+@mixin p($size) {
+  @include rem(padding, map-get($spacing, $size));
+}
+@mixin px($size) {
+  @include rem(padding-left, map-get($spacing, $size));
+  @include rem(padding-right, map-get($spacing, $size));
+}
+@mixin py($size) {
+  @include rem(padding-top, map-get($spacing, $size));
+  @include rem(padding-bottom, map-get($spacing, $size));
+}
+@mixin pt($size) {
+  @include rem(padding-top, map-get($spacing, $size));
+}
+@mixin pb($size) {
+  @include rem(padding-bottom, map-get($spacing, $size));
+}
+@mixin pl($size) {
+  @include rem(padding-left, map-get($spacing, $size));
+}
+@mixin pr($size) {
+  @include rem(padding-right, map-get($spacing, $size));
+}
+
+@mixin m($size) {
+  @include rem(margin, map-get($spacing, $size));
+}
+@mixin mx($size) {
+  @include rem(margin-left, map-get($spacing, $size));
+  @include rem(margin-right, map-get($spacing, $size));
+}
+@mixin my($size) {
+  @include rem(margin-top, map-get($spacing, $size));
+  @include rem(margin-bottom, map-get($spacing, $size));
+}
+@mixin mt($size) {
+  @include rem(margin-top, map-get($spacing, $size));
+}
+@mixin mb($size) {
+  @include rem(margin-bottom, map-get($spacing, $size));
+}
+@mixin ml($size) {
+  @include rem(margin-left, map-get($spacing, $size));
+}
+@mixin mr($size) {
+  @include rem(margin-right, map-get($spacing, $size));
+}

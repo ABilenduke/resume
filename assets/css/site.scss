@@ -1,0 +1,78 @@
+@charset 'utf-8';
+@import "abstracts/__abstracts-dir";
+
+:root {
+  /* IMAGES */
+  --logo: url('/img/logo.png');
+
+  /* SITE CONTAINER COLOURS */
+  --background: #{$light-background};
+  --container: #{$light-container};
+  --font: #{$light-font};
+
+  /* THEME COLOURS */
+  --primary: #{$light-primary};
+  --secondary: #{$light-secondary};
+  --highlight: #{$light-highlight};
+
+  /* STATUS COLOURS */
+  --success: #{$light-success};
+  --warning: #{$light-warning};
+  --danger: #{$light-danger};
+}
+
+[data-theme='dark'] {
+  /* IMAGES */
+  --logo: url('/img/logo_dark.png');
+
+  /* SITE CONTAINER COLOURS */
+  --background: #{$dark-background};
+  --container: #{$dark-container};
+  --font: #{$dark-font};
+
+  /* THEME COLOURS */
+  --primary: #{$dark-primary};
+  --secondary: #{$dark-secondary};
+  --highlight: #{$dark-highlight};
+
+  /* STATUS COLOURS */
+  --success: #{$dark-success};
+  --warning: #{$dark-warning};
+  --danger: #{$dark-danger};
+}
+
+[v-cloak] {
+  display: none;
+  visibility: none;
+  opacity: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+textarea {
+  font-family: $font-family-body;
+  font-size: 62.5%;
+  @include rem(word-spacing, 2px);
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  @include rem(min-width, 320px);
+
+  overflow-x: auto;
+  color: var(--font);
+  background-color: var(--background);
+}
