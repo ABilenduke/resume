@@ -93,6 +93,12 @@
 @mixin flex-col() {
   @include flex-direction(column);
 }
+@mixin flex-row() {
+  @include flex-direction(row);
+}
+@mixin flex-row-reverse() {
+  @include flex-direction(row-reverse);
+}
 @mixin justify-start() {
   @include justify-content(flex-start);
 }

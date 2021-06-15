@@ -44,7 +44,7 @@ export default Vue.extend({
   &__header {
     @include font-size('xl');
 
-    color: $light-font;
+    color: $font-colour;
     font-family: $font-family-header;
 
     @include device-tablet {

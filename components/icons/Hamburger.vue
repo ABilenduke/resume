@@ -44,7 +44,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .ab-svg-hamburger path {
-  fill: var(--font);
+  fill: var(--font-colour);
 }
 .ab-svg-hamburger {
   @include flex-box;

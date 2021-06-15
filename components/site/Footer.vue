@@ -24,7 +24,7 @@ footer {
   nav {
     @include p('m');
 
-    background-color: var(--container);
+    background-color: var(--container-colour);
 
     ul {
       @include flex-box;

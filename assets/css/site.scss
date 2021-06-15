@@ -6,19 +6,61 @@
   --logo: url('/img/logo.png');
 
   /* SITE CONTAINER COLOURS */
-  --background: #{$light-background};
-  --container: #{$light-container};
-  --font: #{$light-font};
+  --background-colour: hsl(#{$background-colour-h}, #{$background-colour-s}, #{$background-colour-l});
+  --container-colour: hsl(#{$container-colour-h}, #{$container-colour-s}, #{$container-colour-l});
+  --font-colour: hsl(#{$font-colour-h}, #{$font-colour-s}, #{$font-colour-l});
 
   /* THEME COLOURS */
-  --primary: #{$light-primary};
-  --secondary: #{$light-secondary};
-  --highlight: #{$light-highlight};
+  --primary-colour: hsl(#{$primary-colour-h}, #{$primary-colour-s}, #{$primary-colour-l});
+  --secondary-colour: hsl(#{$secondary-colour-h}, #{$secondary-colour-s}, #{$secondary-colour-l});
+  --highlight-colour: hsl(#{$highlight-colour-h}, #{$highlight-colour-s}, #{$highlight-colour-l});
 
   /* STATUS COLOURS */
-  --success: #{$light-success};
-  --warning: #{$light-warning};
-  --danger: #{$light-danger};
+  --success-colour: hsl(#{$success-colour-h}, #{$success-colour-s}, #{$success-colour-l});
+  --warning-colour: hsl(#{$warning-colour-h}, #{$warning-colour-s}, #{$warning-colour-l});
+  --danger-colour: hsl(#{$danger-colour-h}, #{$danger-colour-s}, #{$danger-colour-l});
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* IMAGES */
+    --logo: url('/img/logo_dark.png');
+
+    /* SITE CONTAINER COLOURS */
+    --background-colour: hsl(#{$background-colour-h}, #{$background-colour-s}, calc(#{$background-colour-l} * .2));
+    --container-colour: hsl(#{$container-colour-h}, #{$container-colour-s}, calc(#{$container-colour-l} * .1));
+    --font-colour: hsl(#{$container-colour-h}, #{$container-colour-s}, #{$container-colour-l});
+
+    /* THEME COLOURS */
+    --primary-colour: hsl(#{$primary-colour-h}, #{$primary-colour-s}, #{$primary-colour-l});
+    --secondary-colour: hsl(#{$secondary-colour-h}, #{$secondary-colour-s}, #{$secondary-colour-l});
+    --highlight-colour: hsl(#{$highlight-colour-h}, #{$highlight-colour-s}, #{$highlight-colour-l});
+
+    /* STATUS COLOURS */
+    --success-colour: hsl(#{$success-colour-h}, #{$success-colour-s}, #{$success-colour-l});
+    --warning-colour: hsl(#{$warning-colour-h}, #{$warning-colour-s}, #{$warning-colour-l});
+    --danger-colour: hsl(#{$danger-colour-h}, #{$danger-colour-s}, #{$danger-colour-l});
+  }
+}
+
+[data-theme='light'] {
+  /* IMAGES */
+  --logo: url('/img/logo.png');
+
+  /* SITE CONTAINER COLOURS */
+  --background-colour: hsl(#{$background-colour-h}, #{$background-colour-s}, #{$background-colour-l});
+  --container-colour: hsl(#{$container-colour-h}, #{$container-colour-s}, #{$container-colour-l});
+  --font-colour: hsl(#{$font-colour-h}, #{$font-colour-s}, #{$font-colour-l});
+
+  /* THEME COLOURS */
+  --primary-colour: hsl(#{$primary-colour-h}, #{$primary-colour-s}, #{$primary-colour-l});
+  --secondary-colour: hsl(#{$secondary-colour-h}, #{$secondary-colour-s}, #{$secondary-colour-l});
+  --highlight-colour: hsl(#{$highlight-colour-h}, #{$highlight-colour-s}, #{$highlight-colour-l});
+
+  /* STATUS COLOURS */
+  --success-colour: hsl(#{$success-colour-h}, #{$success-colour-s}, #{$success-colour-l});
+  --warning-colour: hsl(#{$warning-colour-h}, #{$warning-colour-s}, #{$warning-colour-l});
+  --danger-colour: hsl(#{$danger-colour-h}, #{$danger-colour-s}, #{$danger-colour-l});
 }
 
 [data-theme='dark'] {
@@ -26,19 +68,19 @@
   --logo: url('/img/logo_dark.png');
 
   /* SITE CONTAINER COLOURS */
-  --background: #{$dark-background};
-  --container: #{$dark-container};
-  --font: #{$dark-font};
+  --background-colour: hsla(#{$background-colour-h}, #{$background-colour-s}, calc(#{$background-colour-l} * .2));
+  --container-colour: hsl(#{$container-colour-h}, #{$container-colour-s}, calc(#{$container-colour-l} * .1));
+  --font-colour: hsl(#{$container-colour-h}, #{$container-colour-s}, #{$container-colour-l});
 
   /* THEME COLOURS */
-  --primary: #{$dark-primary};
-  --secondary: #{$dark-secondary};
-  --highlight: #{$dark-highlight};
+  --primary-colour: hsl(#{$primary-colour-h}, #{$primary-colour-s}, #{$primary-colour-l});
+  --secondary-colour: hsl(#{$secondary-colour-h}, #{$secondary-colour-s}, #{$secondary-colour-l});
+  --highlight-colour: hsl(#{$highlight-colour-h}, #{$highlight-colour-s}, #{$highlight-colour-l});
 
   /* STATUS COLOURS */
-  --success: #{$dark-success};
-  --warning: #{$dark-warning};
-  --danger: #{$dark-danger};
+  --success-colour: hsl(#{$success-colour-h}, #{$success-colour-s}, #{$success-colour-l});
+  --warning-colour: hsl(#{$warning-colour-h}, #{$warning-colour-s}, #{$warning-colour-l});
+  --danger-colour: hsl(#{$danger-colour-h}, #{$danger-colour-s}, #{$danger-colour-l});
 }
 
 [v-cloak] {
@@ -73,6 +115,6 @@ body {
   @include rem(min-width, 320px);
 
   overflow-x: auto;
-  color: var(--font);
-  background-color: var(--background);
+  color: var(--font-colour);
+  background-color: var(--background-colour);
 }

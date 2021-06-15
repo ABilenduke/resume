@@ -22,31 +22,56 @@ $fontSizes: (
 );
 
 // Site Colours
-$light-background: #e7e8e9;
-$light-container: #f1f2f3;
-$light-font: #333;
+$background-colour-h:	210;
+$background-colour-s:	4%;
+$background-colour-l:	91%;
+$background-colour: hsl($background-colour-h, $background-colour-s, $background-colour-l);
+$background-colour-dark: hsl($background-colour-h, $background-colour-s, calc(#{$background-colour-l} * .2));
 
-$dark-background: #454545;
-$dark-container: #333;
-$dark-font: #f1f2f3;
+$container-colour-h: 210;
+$container-colour-s: 8%;
+$container-colour-l: 95%;
+$container-colour: hsl($container-colour-h, $container-colour-s, $container-colour-l);
+$container-colour-dark: hsl($container-colour-h, $container-colour-s, calc(#{$container-colour-l} * .1));
+
+$font-colour-h: 0;
+$font-colour-s: 0%;
+$font-colour-l: 20%;
+$font-colour: hsl($font-colour-h, $font-colour-s, $font-colour-l);
+$font-colour-dark: hsl($container-colour-h, $container-colour-s, $container-colour-l);
 
 // Theme Colours
-$light-primary: #011638;
-$light-secondary: #23CE6B;
-$light-highlight: #F81;
+$primary-colour-h: 217;
+$primary-colour-s: 96%;
+$primary-colour-l: 11%;
+$primary-colour: hsl($primary-colour-h, $primary-colour-s, $primary-colour-l);
 
-$dark-primary: #011638;
-$dark-secondary: #23CE6B;
-$dark-highlight: #F81;
+$secondary-colour-h: 145;
+$secondary-colour-s: 71%;
+$secondary-colour-l: 47%;
+$secondary-colour: hsl($secondary-colour-h, $secondary-colour-s, $secondary-colour-l);
+
+$highlight-colour-h: 30;
+$highlight-colour-s: 100%;
+$highlight-colour-l: 53%;
+$highlight-colour: hsl($highlight-colour-h, $highlight-colour-s, $highlight-colour-l);
 
 // Status Colours
-$light-success: #4bb543;
-$light-warning: #ff6700;
-$light-danger: #8b0000;
+$success-colour-h: 116;
+$success-colour-s: 46%;
+$success-colour-l: 49%;
+$success-colour: hsl($success-colour-h, $success-colour-s, $success-colour-l);
 
-$dark-success: #4bb543;
-$dark-warning: #ff6700;
-$dark-danger: #8b0000;
+$warning-colour-h: 24;
+$warning-colour-s: 100%;
+$warning-colour-l: 50%;
+$warning-colour: hsl($warning-colour-h, $warning-colour-s, $warning-colour-l);
+
+$danger-colour-h: 0;
+$danger-colour-s: 100%;
+$danger-colour-l: 27%;
+$danger-colour: hsl($danger-colour-h, $danger-colour-s, $danger-colour-l);
 
 // Global sizes
 $nav-height: 50px;
+$site-max-width: 1500px;

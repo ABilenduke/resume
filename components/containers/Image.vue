@@ -86,40 +86,42 @@ export default Vue.extend({
     }
 
     &.dark {
-      background-color: $dark-container;
+      background-color: $container-colour-dark;
+      color: $font-colour-dark;
     }
     &.light {
-      background-color: $light-container;
+      background-color: $container-colour;
+      color: $font-colour;
     }
 
     &.background {
-      background-color: var(--background);
+      background-color: var(--background-colour);
     }
     &.container {
-      background-color: var(--container);
+      background-color: var(--container-colour);
     }
     &.font {
-      background-color: var(--font);
+      background-color: var(--font-colour);
     }
 
     &.primary {
-      background-color: var(--primary);
+      background-color: var(--primary-colour);
     }
     &.secondary {
-      background-color: var(--secondary);
+      background-color: var(--secondary-colour);
     }
     &.highlight {
-      background-color: var(--highlight);
+      background-color: var(--highlight-colour);
     }
 
     &.success {
-      background-color: var(--success);
+      background-color: var(--success-colour);
     }
     &.warning {
-      background-color: var(--warning);
+      background-color: var(--warning-colour);
     }
     &.danger {
-      background-color: var(--danger);
+      background-color: var(--danger-colour);
     }
   }
 
@@ -128,6 +130,7 @@ export default Vue.extend({
 
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 2;

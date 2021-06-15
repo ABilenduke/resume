@@ -21,7 +21,7 @@ export default Vue.extend({
       document.documentElement.setAttribute('data-theme', value)
     },
   },
-  mounted() {
+  beforeMount() {
     this.selectedTheme = localStorage.colourTheme
 
     if (this.selectedTheme || !window.matchMedia) return

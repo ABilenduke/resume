@@ -10,6 +10,10 @@ export default [
     prefix: 'Container',
   },
   {
+    path: '~/components/form/',
+    prefix: 'Form',
+  },
+  {
     path: '~/components/fun/',
     prefix: 'Fun',
   },
@@ -20,6 +24,10 @@ export default [
   {
     path: '~/components/site/',
     prefix: 'Site',
+  },
+  {
+    path: '~/components/social/',
+    prefix: 'Social',
   },
   {
     path: '~/components/utilities/',

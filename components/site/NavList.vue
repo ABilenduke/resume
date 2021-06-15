@@ -95,7 +95,7 @@ export default Vue.extend({
 
         text-decoration-line: underline;
         text-decoration-style: solid;
-        text-decoration-color: var(--highlight);
+        text-decoration-color: var(--highlight-colour);
         text-underline-position: under;
       }
     }

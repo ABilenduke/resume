@@ -93,3 +93,7 @@
   	font-family: 'object-fit: #{$fit}';
   }
 }
+
+@mixin max-width {
+  @include rem(max-width, $site-max-width);
+}

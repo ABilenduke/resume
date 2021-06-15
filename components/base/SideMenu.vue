@@ -51,7 +51,7 @@ export default Vue.extend({
 
     height: 100%;
     overflow-y: auto;
-    background-color: var(--container);
+    background-color: var(--container-colour);
   }
 }
 </style>

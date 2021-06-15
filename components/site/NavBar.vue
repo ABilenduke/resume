@@ -1,5 +1,5 @@
 <template>
-  <nav class="site-navigation">
+  <nav class="site-navigation" :class="{ hide }">
     <SiteNavList hide-mobile class="site-navigation__list">
       <template #start>
         <li class="site-navigation-list__item logo">
@@ -23,6 +23,7 @@ export default Vue.extend({
   name: 'SiteNavBar',
   props: {
     menuStatus: Boolean,
+    hide: Boolean,
   },
   data: () => ({
     colourTheme: '',
@@ -48,7 +49,7 @@ export default Vue.extend({
   @include items-center;
 
   top: 0;
-  background-color: var(--container);
+  background-color: var(--container-colour);
   z-index: 1;
 
   &__list {
